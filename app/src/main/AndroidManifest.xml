@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.david.utskakdwi">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +15,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UtsKakDwi">
-        <activity android:name=".Admin.homeAdmin"></activity>
+        <activity android:name=".Admin.Profile"></activity>
+        <activity android:name=".Admin.EditDanHapusData" />
+        <activity android:name=".Pembeli.DetailMobil" />
+        <activity android:name=".Admin.DataMobil" />
+        <activity android:name=".Admin.InputData" />
+        <activity android:name=".Pembeli.HomeUser" />
+        <activity android:name=".Admin.homeAdmin" />
         <activity android:name=".User.register" />
         <activity android:name=".MainActivity" />
         <activity android:name=".User.login">
